@@ -1,0 +1,27 @@
+<div class="face-snap-card" [ngClass]="{snapped: faceSnap.isCliqued === true}">
+      <h1>{{ faceSnap.title | uppercase }}</h1>
+      <p>Mis en ligne le : {{ faceSnap.createdDate }}</p>
+      <p>{{ faceSnap.description }}</p>
+
+      <p>{{ faceSnap.isCliqued }}</p>
+
+      <div *ngIf="faceSnap.isCliqued === true;else elseBlock">
+        <button [ngStyle]="{backgroundColor: 'lightBlue'}" (click)="onSnapped()">{{ buttonText }}</button>
+      </div>
+      <ng-template #elseBlock>
+        <button (click)="onSnapped()">{{ buttonText }}</button>
+      </ng-template>
+
+      <span [ngStyle]="{color: 'rgb(0,' + faceSnap.snaps *3 + ',0)'}">
+        <p> 🤌Nombre de snaps : {{ faceSnap.snaps }}</p>
+      </span>
+
+      <div class="bestPic" *ngIf="faceSnap.snaps > 20">
+        <p>Best Snap du jour</p>
+      </div>
+
+      <img [src]="faceSnap.imagePath" alt="{{ faceSnap.title }}" />
+      <figure> {{ faceSnap.location }}</figure>
+</div>
+ 
+  
