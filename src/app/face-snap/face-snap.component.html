@@ -1,6 +1,6 @@
 <div class="face-snap-card" [ngClass]="{snapped: faceSnap.isCliqued === true}">
       <h1>{{ faceSnap.title | uppercase }}</h1>
-      <p>Mis en ligne le : {{ faceSnap.createdDate }}</p>
+      <p>Mis en ligne le : {{ faceSnap.createdDate | date: 'E, d, MMM,  y' }}</p>
       <p>{{ faceSnap.description }}</p>
 
       <p>{{ faceSnap.isCliqued }}</p>
@@ -11,7 +11,9 @@
       <ng-template #elseBlock>
         <button (click)="onSnapped()">{{ buttonText }}</button>
       </ng-template>
-
+      <p>{{46.66232125| number}}</p>
+      <p>{{0.23 | percent: '2.3-3'}}</p>
+      <p>{{344.36 | currency}}</p>
       <span [ngStyle]="{color: 'rgb(0,' + faceSnap.snaps *3 + ',0)'}">
         <p> 🤌Nombre de snaps : {{ faceSnap.snaps }}</p>
       </span>
