@@ -1,0 +1,96 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.section-pics {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Alignement horizontal avec espacement */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    height: 100vh;
+}
+
+.pin {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    aspect-ratio: 1 / 1; 
+    height: 200px; /* Hauteur fixe, ajustez selon vos besoins */
+}
+
+.pin img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover; /* Remplir complètement la boîte parente */
+}
+
+.pin p {
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.modal-section {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Ajustez la hauteur selon vos besoins */
+    background-image: url('/assets/many-dishes.jpg'); /* Ajoutez le chemin de votre image en arrière-plan */
+    background-size: cover;
+    background-position: center;
+}
+
+.modal {
+    background-color: #fff; /* Fond blanc pour la modal */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
+    width: 500px; /* Ajustez la largeur selon vos besoins */
+    text-align: center;
+    margin: 150px 150px;
+    margin-left: auto; /* Déplace le modal vers la droite */
+    height: 800px;
+}
+
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group input {
+    border-radius: 10px;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: #e60023;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-google {
+    border-radius: 10px;
+    background-color: #4285f4;
+}

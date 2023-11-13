@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <div class="pinterest">
     <div class="left">
-      <a href="#" class="logo"><i class="fab fa-pinterest"></i></a>
-      <a href="#" class="home">Accueil</a>
-      <a href="#" class="explore">Explorer</a>
+      <a routerLink="" href="#" class="logo"><i class="fab fa-pinterest"></i></a>
+      <a routerLink="" routerLinkActive="active" href="#" class="home">Accueil</a>
+      <a routerLink="facesnaps" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" href="#" class="explore">Explorer</a>
       <a href="#" class="create">Créer</a>
     </div>
     <div class="search">
@@ -11,6 +11,11 @@
       <input type="search" name="" placeholder="Rechercher" id="">
     </div>
     <div class="right">
+        <a href="#" class="about" >À propos</a>
+        <a href="#" class="business">Business</a>
+        <a href="#" class="blog">Blog</a>
+        <a href="#" class="connecter">Se connecter</a>
+        <a href="#" class="inscription">S'inscrire</a>
       <a href="#" class="items"><i class="fas fa-bell"></i></a>
       <a href="#" class="items"><i class="far fa-comment-dots"></i></a>
       <a href="#" class="avatar">
